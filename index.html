@@ -2,191 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic portfolio of Manjula P, Assistant Professor, Department of CSE, Jain Institute of Technology, Davangere.">
-  <title>Manjula P | Academic Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Selectors Demo</title>
+  <!-- External style sheet: the link that connects style.css to this page -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero" id="home">
-    <nav class="navbar">
-      <div class="brand">Manjula P</div>
-      <button class="menu-btn" aria-label="Toggle navigation">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#responsibilities">Responsibilities</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <div class="page">
 
-    <div class="hero-content">
-      <div class="profile-badge">MP</div>
-      <div>
-        <p class="eyebrow">ACADEMIC PORTFOLIO</p>
-        <h1>Manjula P</h1>
-        <h2>Assistant Professor · Department of CSE</h2>
-        <p class="institution">Jain Institute of Technology, Davangere</p>
-        <p class="hero-text">Teaching, research, innovation and student-centered academic development.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#research">Explore Research</a>
-          <a class="btn secondary" href="#contact">Contact</a>
-        </div>
+    <!-- ID selector (#intro) + class selector (.card) -->
+    <div class="card" id="intro">
+      <h2>Trail Journal: Coorg Hills</h2>
+      <time datetime="2026-09-28">28 Sep 2026</time>
+      <span class="tag">Trek</span>
+
+      <p>We started before sunrise, with mist still sitting in the coffee estates. The path climbed gently through <span>shade trees</span> and pepper vines.</p>
+      <p>By mid-morning the <span>mist lifted</span> and the ridge came into view.</p>
+
+      <h3>Route notes</h3>
+      <p>This paragraph follows an h3, so the adjacent sibling selector (h3 + p) styles it.</p>
+
+      <div class="note">
+        <p>Carry water: the <span>last stream</span> is at the halfway point.</p>
       </div>
     </div>
-  </header>
 
-  <main>
-    <section id="about" class="section about">
-      <div class="section-heading">
-        <p class="eyebrow">PROFILE</p>
-        <h2>About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-card">
-          <p>Assistant Professor in Computer Science and Engineering with academic experience in teaching, research, student mentoring, project coordination and institutional responsibilities.</p>
-          <p>The professional profile includes work in artificial intelligence, machine learning, IoT, cybersecurity, medical image analysis and data-driven applications.</p>
-        </div>
-        <div class="stats">
-          <div class="stat"><strong>8.5+</strong><span>Years Academic Experience</span></div>
-          <div class="stat"><strong>9</strong><span>Listed Research Publications</span></div>
-          <div class="stat"><strong>2</strong><span>Major Project Funding Achievements</span></div>
-          <div class="stat"><strong>1</strong><span>Published Patent</span></div>
-        </div>
-      </div>
-    </section>
+    <hr>
 
-    <section id="education" class="section tinted">
-      <div class="section-heading">
-        <p class="eyebrow">ACADEMICS</p>
-        <h2>Educational Qualifications</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="year">Pursuing</span>
-          <div><h3>Ph.D. in Computer Science & Engineering</h3><p>Jain University, Bangalore</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="year">2013</span>
-          <div><h3>M.Tech. in Computer Science & Engineering</h3><p>JNTU Anantapur · Indira Priyadarshini College of Engineering and Technology, Naavur, Kurnool</p></div>
-        </article>
-        <article class="timeline-item">
-          <span class="year">2011</span>
-          <div><h3>B.E. in Computer Science & Engineering</h3><p>JNTU Anantapur · St. Johns College of Engineering & Technology, Yerrakota, Yemmiganur</p></div>
-        </article>
-      </div>
-    </section>
+    <div class="card">
+      <h2>Photos and links</h2>
+      <img src="sample.svg" alt="Green hills under a pale sky">
+      <h3>Profile picture (img.round)</h3>
+      <img class="round" src="sample.svg" alt="Round cropped hills">
 
-    <section id="research" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">RESEARCH & INNOVATION</p>
-        <h2>Research Focus</h2>
-      </div>
-      <div class="cards three">
-        <article class="card"><div class="icon">AI</div><h3>Artificial Intelligence</h3><p>Machine learning and AI applications across healthcare, education and real-world problem domains.</p></article>
-        <article class="card"><div class="icon">ML</div><h3>Machine Learning</h3><p>Predictive modelling, lightweight ML models, image analysis and optimization-based applications.</p></article>
-        <article class="card"><div class="icon">IoT</div><h3>IoT & Blockchain</h3><p>IoT-enabled systems, secure applications, blockchain-oriented solutions and smart systems.</p></article>
-      </div>
+      <p class="after-rule">Links: <a href="https://example.com">external link (https)</a>,
+        <a href="guide.pdf">trail guide (PDF)</a>,
+        <a href="#intro">internal link</a>.</p>
+      <p>Hover or tab to a link to see <span>a:hover</span> and <span>a:focus-visible</span>.</p>
+    </div>
 
-      <div class="patent">
-        <div><span class="tag">PATENT</span><h3>Secured IoT Container for Product Delivery System</h3><p>Application No. <strong>202241072555</strong> · Status: Published</p></div>
-      </div>
-    </section>
-
-    <section id="publications" class="section tinted">
-      <div class="section-heading">
-        <p class="eyebrow">RESEARCH OUTPUT</p>
-        <h2>Selected Publications</h2>
-      </div>
-      <div class="publication-list">
-        <article class="publication"><span>2026</span><div><h3>Edge AI for Real Time Fraud Detection on Resource Constrained Device Using Light Weight Machine Learning Models</h3><p>IJIRCCE · Vol. 14, Issue 5, May 2026</p></div></article>
-        <article class="publication"><span>2026</span><div><h3>Thoracic Malignancy Identification through Computed Tomography Scan Analysis</h3><p>IJIRCCE · Vol. 14, Issue 4, April 2026</p></div></article>
-        <article class="publication"><span>2026</span><div><h3>Auto Schedule AI: Intelligent Academic Timetable Generation System Using Genetic Algorithm and Constraint Based Optimization</h3><p>IJIRCCE · Vol. 14, Issue 4, April 2026</p></div></article>
-        <article class="publication"><span>2025</span><div><h3>Light Weight Crypto System Design for Blockchain Application</h3><p>IJCRT · Vol. 13, Issue 12, December 2025</p></div></article>
-        <article class="publication"><span>2025</span><div><h3>A Novel Digital Imaging Method for Real-Time Soil Nutrient and pH Assessment in Sustainable Farming Using Machine Learning</h3><p>IJPREMS · Vol. 05, Issue 07, July 2025</p></div></article>
-        <article class="publication"><span>2024</span><div><h3>Segmentation of Medical Images Using U-Net with ResNet</h3><p>IJCRT · Vol. 12, Issue 7, 2024</p></div></article>
-        <article class="publication"><span>2023</span><div><h3>Review on Machine Learning Technique for Plant Disease Detection</h3><p>Journal of Propulsion Technology · Vol. 44, No. 6, 2023</p></div></article>
-        <article class="publication"><span>2022</span><div><h3>Patellofemoral Arthritism Prediction Using Machine Learning</h3><p>International Journal of Engineering Research & Technology · Vol. 10, Issue 11, June 2022</p></div></article>
-        <article class="publication"><span>2022</span><div><h3>Heart Attack Prediction Using Machine Learning Algorithms</h3><p>International Journal of Engineering Research & Technology · Vol. 10, Issue 11, June 2022</p></div></article>
-      </div>
-    </section>
-
-    <section id="achievements" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">ACHIEVEMENTS</p>
-        <h2>Awards & Funding</h2>
-      </div>
-      <div class="cards two">
-        <article class="card highlight"><span class="tag">AWARD</span><h3>Innovation Ambassador</h3><p>Institution Innovation Council, 2022.</p></article>
-        <article class="card highlight"><span class="tag">AWARD</span><h3>NPTEL Mentor</h3><p>Mentor for NPTEL Online Certification Course on Python for Data Science, July 2023.</p></article>
-        <article class="card highlight"><span class="tag">FUNDING</span><h3>KSCST Funded Project</h3><p>“EEG Analytical Model to Estimate Learner's Understanding Level”.</p></article>
-        <article class="card highlight"><span class="tag">FUNDING</span><h3>VTU Funded Project</h3><p>“IoT Smart Ambulance”. An idea proposal was also submitted under the Government of India MSME initiative.</p></article>
-      </div>
-    </section>
-
-    <section id="responsibilities" class="section tinted">
-      <div class="section-heading">
-        <p class="eyebrow">INSTITUTIONAL CONTRIBUTION</p>
-        <h2>Responsibilities</h2>
-      </div>
-      <div class="chips">
-        <span>Mentor</span><span>Department Sports Coordinator</span><span>Department ICC Coordinator</span>
-        <span>Department Project Coordinator</span><span>Department ISTE Coordinator</span><span>Department CICC Coordinator</span>
-        <span>NBA Criteria 3 Coordinator</span><span>NAAC Criteria 2 Coordinator</span><span>Daily News & Newsletter Coordinator</span>
-        <span>Department SIL Coordinator</span><span>Department SIH Coordinator</span><span>AICTE Activity Points Coordinator</span>
-        <span>External DCS</span><span>Valuator & Laboratory Examiner</span>
-      </div>
-
-      <div class="section-heading subheading">
-        <p class="eyebrow">ACADEMIC EVENTS</p>
-        <h2>Workshops & Programs Conducted</h2>
-      </div>
-      <div class="event-grid">
-        <div>One-week SDP on Full Stack Development · 2025</div>
-        <div>One-day FDP on Introduction to AI and its Application · 2025</div>
-        <div>One-week SDP on AI & ML · 2025</div>
-        <div>Ignite.CS Project Development Event · 2025</div>
-        <div>Workshop on Data Structure and its Application · 2025</div>
-        <div>Project Expo · 2024, 2025</div>
-        <div>Workshop on Insights of Data Science · 2024</div>
-        <div>Prototype Competition · 2023</div>
-        <div>Workshop on IPR & IP Startup · 2023</div>
-        <div>Workshop on Selenium with Java · 2022</div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-heading">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2>Contact</h2>
-      </div>
-      <div class="contact-card">
-        <div><h3>Manjula P</h3><p>Assistant Professor, Department of CSE<br>Jain Institute of Technology, Davangere</p></div>
-        <div class="contact-links">
-          <a href="mailto:pmanjula2316@gmail.com">✉ pmanjula2316@gmail.com</a>
-          <a href="tel:+918553115284">☎ +91 85531 15284</a>
-          <a href="https://orcid.org/0009-0004-8771-3173" target="_blank" rel="noopener">ORCID: 0009-0004-8771-3173</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="year"></span> Manjula P · my profile</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.querySelector(".menu-btn").addEventListener("click", () => {
-      document.querySelector(".nav-links").classList.toggle("open");
-    });
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", () => document.querySelector(".nav-links").classList.remove("open"));
-    });
-  </script>
+  </div>
 </body>
-
 </html>
